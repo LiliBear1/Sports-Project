@@ -1,4 +1,4 @@
-# SportsProject
+# Sports Project
 Team Project 1 - Conceiving and executing a design that solves a real-world problem.
 
 
@@ -17,10 +17,12 @@ We are combigning all of the skills we have learnt thus far throughout the cours
 
 * [Deployed Page Link](XXXX)
 
-    ![Images demo](images/XXXX)
-
 * [Git Page Link](https://github.com/LiliBear1/Sports-Project) 
 
+
+    ### Images 
+
+    ![Images demo](AddImageHere)
 
 
 ## Process
@@ -33,10 +35,10 @@ XXXX
 XXXX
 
 ## Credits 
-Vittoria Bugana
-Chris-Eric Dagbo
-Adama Sall
-2022 Trilogy Education Services, LLC
+* Vittoria Bugana   
+* Chris-Eric Dagbo  
+* Adama Sall  
+* 2022 Trilogy Education Services, LLC
 
 ## License
 
