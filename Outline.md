@@ -92,7 +92,7 @@ Checking free APIs available for developers on sites such as https://rapidapi.co
 
 # 04 Jan 2023
 
-## Accomplished
+## Accomplished on 3 Jan
 
 * Created some Pseudocode
 * Created the repository with collaborators
@@ -115,14 +115,16 @@ Checking free APIs available for developers on sites such as https://rapidapi.co
 * Time management
 * Communication - Slight misunderstanding in task requirment yesterday re proposal as we thought draft only, not finalised doc
 
+# 05 Jan 2023
 
-## Accomplished 
+## Accomplished on 4 Jan
 
 * Completed outline ReadMe
 * Completed proposal with approval from Diego
 * Completed MVP - Wireframe
 * Repo updated with folders
-* Assigned team tasks  - Back End and 
+* Used Git Projects for Kanban Method / Agile working
+* Assigned team tasks: Front End - Lili and Adama, Back End Vittoria and Chris-Eric.
 
 
 
