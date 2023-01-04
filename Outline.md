@@ -116,10 +116,14 @@ Checking free APIs available for developers on sites such as https://rapidapi.co
 * Communication - Slight misunderstanding in task requirment yesterday re proposal as we thought draft only, not finalised doc
 
 
-## Accomplished
+## Accomplished 
 
-* Completed ReadMe
-* 
+* Completed outline ReadMe
+* Completed proposal with approval from Diego
+* Completed MVP - Wireframe
+* Repo updated with folders
+* Assigned team tasks  - Back End and 
+
 
 
 
