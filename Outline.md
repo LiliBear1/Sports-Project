@@ -1,16 +1,22 @@
 # Proposal
 
 
-## Project Title
+## Football Feed
 
 
 ## Project Description
 
 * Conceive and execute a design that solves a real-world problem by integrating data received from multiple server-side API requests. 
 
-* Continue to learn about agile development methodologies to help you work collaboratively. 
+* Continue to learn about agile development methodologies to help you work collaboratively.
+
+* We are combining all of the skills we have learnt thus far throughout the course to create and execute an application which integrates data received from multiple server-side API requests as well as continue to learn about agile development methodologies to work collaboratively.  
 
 * We have decided to go for a Sports API foucusing on football/soccer most likely. The user story can be found below and will be on the repo once it is set up. 
+
+* This is a Football Feed app which will allow a user to look up their favourite football team and be provided with info about past and present features/matches so that they can see what games they want to attend and also find surrounding articles about the team and players so that they can keep up to date with the team.
+
+
 
 
 ## Key Topics to cover
@@ -82,6 +88,44 @@ Checking free APIs available for developers on sites such as https://rapidapi.co
 * End the week by presenting project to class. 
 
 * Once project is complete, update  professional materials and add new project to portfolio.
+
+
+# 04 Jan 2023
+
+## Accomplished
+
+* Created some Pseudocode
+* Created the repository with collaborators
+* Finalised idea - Sports / News app
+
+## Goals
+
+* Find which two specific APIs we're going to use
+* Create readme
+* Allocate responsibilities
+    Lili - Front End / ReadMe / PM  
+    Vittoria - Back End  
+    Chris Eric - Back End  
+    Adama - Front End  
+* Create wireframe 
+* Finalise proposal as a word doc to send to Diego
+
+## Obstacles
+* Finding APIs which are useable without pay wall etc 
+* Time management
+* Communication - Slight misunderstanding in task requirment yesterday re proposal as we thought draft only, not finalised doc
+
+
+## Accomplished
+
+* Completed ReadMe
+* 
+
+
+
+
+
+
 
 
 
