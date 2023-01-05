@@ -1,12 +1,138 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Football Feed</title>
+
+    <!-- CSS Bootstrap (4) -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/style.css">
 </head>
+</head>
+
 <body>
-    
+    <header>
+        <h1>Football Feed</h1>
+
+        <!-- Jumbotron -->
+        <div class="jumbotron">
+            <h1 class="display-4">Search Championship</h1>
+            <!-- Search Bar: Team  & Logo to come in after selection Placeholder -->
+            <nav class="navbar navbar-light bg-light">
+                <form class="form-inline">
+                    <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                </form>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Team Fixtures Section  -->
+    <section id="team-fixtures">
+        <div class="card text-center">
+            <div class="card-header">
+                Team Fixtures
+            </div>
+            <div class="card-body">
+                <h5 class="card-title">Matches</h5>
+                <p class="card-text">Scores, League Tables, Dates</p>
+                <!-- <Dropdown for number of matches to select -->
+                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton"
+                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    How many
+                </button>
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                    <a class="dropdown-item" href="#">1</a>
+                    <a class="dropdown-item" href="#">2</a>
+                    <a class="dropdown-item" href="#">3</a>
+                    <a class="dropdown-item" href="#">4</a>
+                    <a class="dropdown-item" href="#">5</a>
+                </div>
+                <!-- Buttons for past and future matches selection -->
+                <a href="#" class="btn btn-primary">Past Matches</a>
+                <a href="#" class="btn btn-primary">Future Matches</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Team Players Section  -->
+    <section id="team-players">
+        <div class="card text-center">
+            <div class="card-header">
+                Players
+            </div>
+            <div class="card-body">
+                <!-- <Dropdown for Players to select -->
+                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton"
+                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Select Players
+                </button>
+                <!-- Think we need to revisit this section because how do we automate what selection pops up based on team selection? -->
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                    <a class="dropdown-item" href="#">Player A</a>
+                    <a class="dropdown-item" href="#">Player B</a>
+                    <a class="dropdown-item" href="#">Player C</a>
+                    <a class="dropdown-item" href="#">Player D</a>
+                </div>
+                <div class="player-info">
+                    <h5 class="card-title">Player Name/s</h5>
+                    <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- We have removed this section as wasn't specific to user story, could be an enhancement  -->
+    <!-- Team managers Section 
+    <section id="team-managers">
+        <div class="card text-center">
+            <div class="card-header">
+              Team Managers
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">Managers</h5>
+              <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+            </div>
+          </div>
+    </section> -->
+
+
+    <!-- Team / Players News Section  -->
+    <section id="team-news">
+        <div class="card text-center">
+            <div class="card-header">
+              News
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">News</h5>
+              <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+            </div>
+          </div>
+    </section>
+
+
+    <!-- Footer  -->
+
+
+
+
+
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
 </body>
+
 </html>
