@@ -1,0 +1,100 @@
+* {
+    box-sizing: border-box;
+}
+
+
+
+body {
+    display: inline-block;
+    width: 100%;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+
+h1 {
+    margin: 0;
+    text-align: center;
+    color: #fffcfc;;
+}
+
+
+h2 {
+    display: inline-block;
+    margin-bottom: 0;
+    color: #fffcfc;
+}
+
+.card-body {
+    background-color: #C4DDDD;
+}
+
+.btn {
+    text-align: center;
+    text-transform: none;
+    padding-left: 5px;
+    padding-right: 5px;
+    border-radius: 5px;
+    margin-left: 5px;
+    margin-right: 5px;
+    background-color: black;
+    color: #B1ECFF;
+    font-weight: bolder;
+}
+
+ol li a{
+    color:white;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    padding: 2px;
+    margin: 0;
+    width: 200%;
+    height: 200px;
+}
+
+li{
+    list-style: none;
+}
+
+.jumbotron {
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    height: calc(100vh - 10px);
+    background-image: url(../images/Hero.png);
+    margin-bottom: 0px;
+}
+
+
+
+header {
+    background-color: #adb5bd;
+    padding: 15px;
+    display: block;
+}
+
+.card-header {
+    background-color: black;
+    /* box-orient: 1px solid; */
+}
+
+.Footer {
+    background-position: center;
+    background-size: cover;
+    height: calc(45vh - 50px);
+    background-repeat: no-repeat;
+    background-image: url(../images/footer.png);
+}
+
+
+#header {
+    position: relative;
+    min-height: 200px;
+    color: black;
+}
+
+
+#header-content {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
