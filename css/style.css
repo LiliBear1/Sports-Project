@@ -55,6 +55,11 @@ li{
     list-style: none;
 }
 
+#contact {
+    display: flex;
+    justify-content:space-between;
+}
+
 .jumbotron {
     background-position: center;
     background-size: cover;
@@ -62,6 +67,10 @@ li{
     height: calc(100vh - 10px);
     background-image: url(../images/Hero.png);
     margin-bottom: 0px;
+}
+
+.parallax-team {
+    margin-left: 20px;
 }
 
 
@@ -98,3 +107,4 @@ header {
     bottom: 0;
     left: 0;
 }
+
