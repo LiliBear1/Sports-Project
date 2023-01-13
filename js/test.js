@@ -1,85 +1,56 @@
-
-//Making the Jumbotron Interactive
-// Targeting the search box to retrieve the output of the user favorite football league
-// Targeting the search box to retrieve the output of the user favorite team 
-// Set some conditions to make sure the user input is within the API
-// Setting up the historical search to enable the user to get back to it 
-    // Idea 1 - We can have a dropdown for the historical search when the user clicks on the search box
-    // idea 2 - Display the historical search below the search box
-// Targeting the logo team to output the logo of the user's favorite team right away after his/her input
-
-//Search variables
-var btnSearchLeague = document.getElementById('searchLeague');
-var btnSearchTeam = document.getElementById('#search-team');
-var url = 'https://v3.football.api-sports.io/';
+var params = new URLSearchParams(document.location.search.substring(1));
+var id = params.get('id');
+var url = 'https://api.football-data.org/v2/';
+var matchesTableBody = document.getElementById('table');
+window.sr = ScrollReveal();
 
 
-document.addEventListener('DOMContentLoaded', ()=>{
+document.addEventListener('DOMContentLoaded', () => {
     
+    //scroll animations
+    sr.reveal('header', {
+        duration: 3000,
+        origin: 'bottom',
+        distance: '-100px'
+    });
 
+    getSchedule();
+});
 
-    //event for getting league table data
-    btnSearchLeague.addEventListener('click', getDataTable);
-
-})
-
-function getDataTable(e) {
-    var league = e.target.parentElement.querySelector('select').value;
-
-    if(league!=='') {
-        getLeagueTable(league);
-    }
-    else {
-        showAlert();
-    }
-}
-
-function showAlert() {
-  alert  ("There is not an option selected!", "Please choose one.", "error");
-}
-
-async function getLeagueTable(league) {
-
+async function getSchedule() {
     try {
-        await fetch(`${url}competitions/${league}/standings?standingType=HOME`,{
+        await fetch(`${url}teams/${id}/matches`, {
             "method" : "GET",
             "headers" : {
-                "X-Auth-Token" : "a1502fa515d558ee4e3c9d6a522dd435" //API key to be added
+                "X-Auth-Token" : "fb158dbd69914356b52d87836a01a36f"
             }
         })
         .then(resp => resp.json())
         .then(result => {
-            var teams = result.standings[0].table;
-            console.log(teams);
-            cleanHTML(leagueTableBody);
+            var matches = result.matches;
+            console.log(matches);
+
+            cleanHTML(matchesTableBody);
     
-            teams.forEach(team => {
-                var {position, team: {crestUrl, name, id}, playedGames, won, draw, lost, goalsFor, goalsAgainst, goalDifference, points } = team;
-                var row = document.createElement('tr');
-                var stringTemplate = `
-                  <th scope="row">${position}</th>
-                  <td class="align-self-center"><img src="${crestUrl}" class="image-team">  ${name}</td>
-                  <td>${playedGames}</td>
-                  <td>${won}</td>
-                  <td>${draw}</td>
-                  <td>${lost}</td>
-                  <td>${goalsFor}</td>
-                  <td>${goalsAgainst}</td>
-                  <td>${goalDifference}</td>
-                  <td>${points}</td>
-                  <td><a href="team-schedule.html?id=${id}" class="text-dark">schedule <i class="fas fa-long-arrow-alt-right"></i></a></td>
+            matches.forEach(match => {
+                let { utcDate , awayTeam, homeTeam, score: { fullTime }  } = match;
+                utcDate = utcDate.substring(0,10);
+                let row = document.createElement('tr');
+                let stringTemplate = `
+                  <th scope="row">${utcDate}</th>
+                  <td><img src="https://crests.football-data.org/${homeTeam.id}.svg" class="image-team"> &nbsp; ${homeTeam.name} </td>
+                  <td><img src="https://crests.football-data.org/${awayTeam.id}.svg" class="image-team"> &nbsp;  ${awayTeam.name} </td>
+                  <td>${fullTime.homeTeam || '&nbsp;'} : ${fullTime.awayTeam || ''}</td>
                 `;
     
                 row.innerHTML = stringTemplate;
-                btnSearchTeam.appendChild(row);
+                matchesTableBody.appendChild(row);
             });
         });
     }
     catch(error) {
         console.log(error);
     }
-
-    
 }
 
 
