@@ -17,7 +17,7 @@ This is a Football Feed app which will allow a user to look up their favourite f
 
 # Deployed Page
 
-* [Deployed Page Link](XXXX)
+* [Deployed Page Link](https://lilibear1.github.io/Sports-Project/)
 
 * [Git Page Link](https://github.com/LiliBear1/Sports-Project) 
 
@@ -38,7 +38,6 @@ XXXX
 
 ## Credits 
 * Vittoria Bugana   
-* Chris-Eric Dagbo  
 * Adama Sall  
 * 2022 Trilogy Education Services, LLC
 
